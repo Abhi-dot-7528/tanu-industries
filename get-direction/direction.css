@@ -156,11 +156,11 @@ h1 {
 /* =========================================== */
 
 .banner {
-  background-image: url('banner.jpg');
+  background-image: url('banner.webp');
   background-color: #35353565;
   background-blend-mode: multiply;
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 400px;
+  padding-bottom: 400px;
   text-align: center;
   background-size: cover;
 }
@@ -189,6 +189,25 @@ main {
 .address-text {
   font-size: 1em;
   font-weight: bolder;
+}
+
+.footer-wrapper {
+  background-color: #8f5218;
+  border: 1px solid black;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+}
+
+.socials a {
+  max-width: 50px;
+  margin: 0.7em;
 }
 
 @media (max-width: 675px) {

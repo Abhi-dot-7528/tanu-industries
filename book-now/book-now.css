@@ -171,7 +171,7 @@ h1 {
 
 
 main {
-  border: solid 3px #474544;
+  /* border: solid 3px #474544; */
   width: 90%;
   margin-inline: auto;
   margin-block: 1em;
@@ -223,4 +223,23 @@ textarea {
   background-color: #8f5118;
   color: #fff;
   font-weight: var(--fw-bold);
+}
+
+.footer-wrapper {
+  background-color: #8f5218;
+  border: 1px solid black;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+}
+
+.socials a {
+  max-width: 50px;
+  margin: 0.7em;
 }
