@@ -84,7 +84,8 @@ h6 {
 
 body {
   font-family: var(--ff-body);
-  background: #f2f3eb;
+  background-color: #0c192c;
+  color: #fff;
 }
 
 .container {
@@ -96,33 +97,51 @@ body {
 
 /* ========= Header ========= */
 
-header {
-  background-color: #f8f8f8;
-}
-
 h1 {
   font-family: var(--ff-primary);
+  color: #cac10d;
+    text-shadow: 0 0 10px #ded416, 0 0 20px #ded416, 0 0 40px #ded416, 0 0 60px #ded416, 0 0 80px #ded416, 0 0 160px #ded416;
   font-size: var(--fs-600);
   line-height: 0.7;
+  letter-spacing: 10px;
+  animation: h1ani 2s linear;
+  animation-iteration-count: 2;
+}
+
+@keyframes h1ani {
+  0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+    color: #cac10d;
+    text-shadow: 0 0 10px #ded416, 0 0 20px #ded416, 0 0 40px #ded416, 0 0 60px #ded416, 0 0 80px #ded416, 0 0 160px #ded416;
+  }
+  18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
+    color: #928e3d;
+    text-shadow: none;
+  }
 }
 
 @media (max-width: 675px) {
   h1 {
-    font-size: var(--fs-400);
+    font-size: 1.3rem;
   }
   p {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     padding-block: 0.6em;
+  }
+  h2 {
+    font-size: var(--fs-400);
   }
 }
 
 .logo-sub-text {
-  color: #707070;
+  color: #c8c8c8;
 }
+
 
 .container-logo {
   display: flex;
   align-items: center;
+  justify-content: center;
+  padding: 0.6em;
 }
 
 .container-logo-text {
@@ -156,11 +175,12 @@ h1 {
 
 .banner {
   background-image: url('banner.jpg');
-  background-color: #35353565;
+  background-color: #353535b3;
   background-blend-mode: multiply;
   padding-top: 150px;
   padding-bottom: 150px;
   text-align: center;
+  text-shadow: 0 0 10px #4fc3dc, 0 0 20px #4fc3dc, 0 0 40px #4fc3dc, 0 0 60px #4fc3dc, 0 0 80px #4fc3dc, 0 0 160px #4fc3dc;
 }
 
 .banner-text {
@@ -186,7 +206,7 @@ textarea {
   background: none;
   border: none;
   border-bottom: solid 2px #474544;
-  color: #474544;
+  color: #ffffff;
   font-size: 1em;
   font-weight: 400;
   letter-spacing: 1px;
@@ -205,13 +225,35 @@ textarea:focus {
 
 textarea {
   height: 150px;
+  padding-right: 2em;
   resize: none;
 }
 
+option {
+  color: #000000;
+}
+
+.message {
+  position: relative;
+}
+
+.message span {
+  pointer-events: none;
+  user-select: none;
+  right: 1%;
+  bottom: 20%;
+  color: #607189;
+  padding-left: 0.7em;
+}
+
+#char_count {
+  position: absolute;
+}
+
 #form_button {
-  background: none;
+  background: #4fc3dc;
   border: solid 2px #474544;
-  color: #474544;
+  color: #000000;
   cursor: pointer;
   font-size: 0.875em;
   font-weight: var(--fw-semi-bold);
@@ -220,13 +262,13 @@ textarea {
 }
 
 #form_button:hover {
-  background-color: #8f5118;
+  box-shadow: 0 0 10px #4fc3dc, 0 0 20px #4fc3dc, 0 0 40px #4fc3dc;
   color: #fff;
   font-weight: var(--fw-bold);
 }
 
 .footer-wrapper {
-  background-color: #8f5218;
+  background-color: #192f50;
   border: 1px solid black;
   color: #fff;
   display: flex;

@@ -274,12 +274,34 @@ p {
   justify-content: flex-end;
   align-items: center;
   padding: 0.4em;
-  transform: translateX(-190px);
-  -webkit-transform: translateX(-190px);
-  -ms-transform: translateX(-190px);
-  transition: all 0.5s linear;
-  -webkit-transition: all 0.5s linear;
-  -ms-transition: all 0.5s linear;
+}
+
+
+@media (min-width: 700px) {
+  .icon-bar a
+  {
+    transform: translateX(-190px);
+    -webkit-transform: translateX(-190px);
+    -ms-transform: translateX(-190px);
+    transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+  }
+  @keyframes letszoom {
+    from {
+      transform: scale(0.8);
+    }
+  
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  .icon-bar a:hover {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+  }
 }
 
 .fb-bg {
