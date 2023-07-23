@@ -162,9 +162,15 @@ h1 {
 @media (max-width: 675px) {
   .container-logo > a {
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
     width: 100%;
+    text-align: center;
   }
+
+  .container-logo-text {
+    margin-left: 0;
+  }
+
   .logo-img {
     width: 30%;
     margin-bottom: 0.7em;

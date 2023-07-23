@@ -218,7 +218,7 @@ p {
 
 .slideshow {
   padding-block: 300px;
-  background-image: url("images/slideshow/image1.jpg");
+  background-image: url("images/slideshow/image1.webp");
   background-size: 100% 100%;
   background-position: center center;
   background-repeat: no-repeat;
@@ -231,19 +231,19 @@ p {
 @keyframes slides {
   0%,
   100% {
-    background-image: url("images/slideshow/image1.jpg");
+    background-image: url("images/slideshow/image1.webp");
   }
   20% {
-    background-image: url("images/slideshow/image3.jpg");
+    background-image: url("images/slideshow/image3.webp");
   }
   40% {
-    background-image: url("images/slideshow/image4.jpg");
+    background-image: url("images/slideshow/image4.webp");
   }
   60% {
-    background-image: url("images/slideshow/image2.jpg");
+    background-image: url("images/slideshow/image2.webp");
   }
   80% {
-    background-image: url("images/slideshow/image5.jpg");
+    background-image: url("images/slideshow/image5.webp");
   }
 }
 
@@ -458,6 +458,7 @@ p {
   object-fit: cover;
 }
 
+
 /* =============================================================== */
 
 /* ==================== PLYWOOD DESIGN ========================== */
@@ -501,14 +502,13 @@ p {
 
 .lam-col {
   margin-bottom: .56em;
-}
-
-.lam-col img {
   box-shadow: 0 0 30px #4fc3dc;
   border-radius: 10px;
 }
 
-
+.lam-col img {
+  border-radius: 10px;
+}
 
 /* ============================================================== */
 
@@ -603,7 +603,7 @@ p {
     width: 100%;
   }
   .contact-col img {
-    width: 5%;
+    width: 10%;
   }
   .contact-text,
   .btn {
@@ -630,7 +630,7 @@ p {
   }
 
   .icon-bar a img {
-    width: 20px;
-    padding-left: 0.2em;
+    width: 30px;
+    padding-left: 0.4em;
   }
 }
