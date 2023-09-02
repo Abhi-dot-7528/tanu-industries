@@ -285,7 +285,7 @@ p {
 }
 
 .icon-bar a img {
-  max-width: 30px;
+  max-width: 40px;
   padding: 0.2em;
   cursor: pointer;
 }
@@ -563,7 +563,6 @@ p {
 
 .contact-col img {
   max-width: 50px;
-  fill: white;
 }
 
 /* ====================== FOOTER =========================== */
@@ -577,6 +576,7 @@ p {
   flex-direction: column;
   gap: 10px;
   align-items: center;
+  text-align: center;
   padding-block: 1em;
 }
 
@@ -589,6 +589,10 @@ p {
   max-width: 40px;
   margin: 0.7em;
   margin-top: 0;
+}
+
+.address {
+  max-width:70%;
 }
 
 .copyright-text {

@@ -295,8 +295,14 @@ option {
   border: 1px solid black;
   color: #fff;
   display: flex;
+  gap: 10px;
   flex-direction: column;
+  text-align: center;
   align-items: center;
+}
+
+.address {
+  max-width:70%;
 }
 
 .socials {
@@ -307,4 +313,8 @@ option {
 .socials a {
   max-width: 40px;
   margin: 0.7em;
+}
+
+.copyright-text {
+  color: #e7ac60;
 }
