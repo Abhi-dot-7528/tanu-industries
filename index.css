@@ -575,6 +575,7 @@ p {
   color: #fff;
   display: flex;
   flex-direction: column;
+  gap: 10px;
   align-items: center;
   padding-block: 1em;
 }
@@ -587,6 +588,11 @@ p {
 .socials a {
   max-width: 40px;
   margin: 0.7em;
+  margin-top: 0;
+}
+
+.copyright-text {
+  color: #e7ac60;
 }
 
 /* .socials img {
